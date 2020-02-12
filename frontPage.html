@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shadowfax - Last mile delivery services</title>
+        <link rel = "stylesheet" type = "text/css" href = "css/styling.css">
+        <link rel="icon" href="https://shadowfax.in/assets/images/logo/favicon.png">
+        <script>
+            /*var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }*/
+
+            /*function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                    }
+                }
+            }*/
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slider");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <img src="https://shadowfax.in/assets/images/logo/sfx_logo_new.png">
+                <ul>
+                    <li><a href="https://shadowfax.in/about-us">ABOUT US</a></li>
+                    <!--<li><a href="#">SERVICES</a></li>-->
+                    <!--<li><a href="#">CATEGORIES</a></li>-->
+                    <li><div class="dropdown">
+                        <button class="dropbtn">SERVICES
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="https://shadowfax.in/services"><b>ALL SERVICES</b></a>
+                            <a href="https://shadowfax.in/services/hyperlocal-delivery"><b>HYPERLOCAL DELIVERY</b></a>
+                            <a href="https://shadowfax.in/services/same-day-delivery"><b>SAME DAY DELIVERY</b></a>
+                            <a href="https://shadowfax.in/services/next-day-delivery"><b>NEXT DAY DELIVERY</b></a>
+                        </div>
+                    </div></li>
+                    <li><div class="dropdown">
+                        <button class="dropbtn">CATEGORIES
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="https://shadowfax.in/services/hyperlocal-food-delivery"><b>FOOD</a>
+                            <a href="https://shadowfax.in/services/hyperlocal-pharma-delivery"><b>PHARMA</b></a>
+                            <a href="https://shadowfax.in/services/same-day-grocery-delivery"><b>GROCERIES</b></a>
+                            <a href="https://shadowfax.in/services/next-day-forward-delivery"><b>E-COMMERCE DELIVERIES</b></a>
+                            <a href="https://shadowfax.in/services/same-day-reverse-logistics"><b>E-COMMERCE RETURN LOGISTICS</b></a>
+                        </div>
+                    </div></li>
+
+                    <li><a href="https://shadowfax.in/news">NEWSROOM</a></li>
+                    <li><a href="https://shadowfax.in/contact-us">CONTACT US</a></li>
+                    <li><a href="tracker.shadowfax.in">TRACK ORDER</a></li>
+                    <li><div class="dropdown">
+                        <button class="dropbtn" id="partnerButton">PARTNER WITH US
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="https://shadowfax.in/delivery-partners-job"><b>AS DELIVERY PARTNER</b></a>
+                            <a href="https://shadowfax.in/merchant-signup"><b>AS MERCHANT</b></a>
+                        </div>
+                    </div></li>
+                </ul>
+            </div>
+        </header>
+        <div class="bgimg">
+            <div class="fastest">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Building India's Fastest</h2>
+            </div>
+            <h1>Last mile Delivery Network</h1>
+            <div class="anotherBanner">
+                <h3>Partner with us and start earning extra income.</h3>
+                <a href="#">Download Partner App</a>
+                <a href="#">Download KiranaX App</a>
+            </div>
+        </div>
+
+        <div class="howitworksContainer">
+            <div class="howitworks" layout="column" flex="100" flex-xs="100" flex-sm="100" layout-column flex-xs-100 flex-sm-100 flex-100">
+                <h1><b>How we work</b></h1>
+                <div class="separator1"></div>
+                <p>
+                    <b>Shadowfax is India's most trusted on-demand last mile logistics offering tech-enabled one stop delivery solutions
+                    for E-Commerce, Restaurants, FMCG, Pharma and online & offline retailers.</b>
+                </p>
+            </div>
+    
+            <div layout="column" flex="50" flex-xs="100" flex-sm="100" layout-align="center" class="howitworksHomePage">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AHTpquAMLQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="ourServicesContainer">
+            <div layout="column" layout-align="start" class="ourServicesDiv">
+                <div layout="row" layout-align="center center" class="ourServices1">
+                    <h1>Our services</h1>
+                    <div class="separator2"></div>
+                    <p><b>We are one of the fastest growing B2B logistics companies in 
+                        India. Our logistics network spans over 500+ cities, with 100K+ 
+                        delivery partners and over 3000+ vehicles.</b></p>
+                </div>
+            </div>
+            
+    
+            <div layout="row" flex="100" flex-gt-lg="100" flex-md="100" flex-xs="100" layout-xs="column" layout-align="space-around stretch" layout-align-xs="center center" class="home_ourServices_subTxt">
+                <div layout="column" class="class1" ui-sref="services.now" float="left">
+                    <img src="https://shadowfax.in/assets/images/now_page/HL_Icon.png" class="iconImg" align="middle">
+                    <h2 style="text-align: center;">Hyperlocal delivery</h2>
+                    <div class="separator4" style="margin-left: 40%; margin-right: 50%;"></div>
+                    <p><b>Shadowfax is one of India's fastest delivery networks offering instant deliveries.</b></p>
+                    <button class="learnMoreBtn" type="button" ng-transclude="">
+                        <span><a href="https://shadowfax.in/services/hyperlocal-delivery"></a>Learn More</span>
+                    </button>
+                </div>
+                <div layout="column" class="class2" ui-sref="services.same-day-delivery">
+                    <img src="https://shadowfax.in/assets/images/now_page/Sameday.svg" class="iconImg" align="middle" style="width: 50%;">
+                    <h2 style="text-align: center;">Same day delivery</h2>
+                    <div class="separator4" style="margin-left: 40%; margin-right: 50%;"></div>
+                    <p><b>For orders within same cities, trust Shadowfax for fast-paced deliveries.</b></p>
+                    <button class="learnMoreBtn" type="button" ng-transclude="">
+                        <span><a href="https://shadowfax.in/services/same-day-delivery"></a>Learn More</span>
+                    </button>
+                </div>
+                <div layout="column" class="class3" ui-sref="services.next-day-delivery" float="right">
+                    <img src="https://shadowfax.in/assets/images/now_page/NDD_Logo.png" class="iconImg" align="middle">
+                    <h2 style="text-align: center;">Next day delivery</h2>
+                    <div class="separator4" style="margin-left: 40%; margin-right: 50%;"></div>
+                    <p><b>In our fast moving economy, speed is key. This is where our next day delivery service emerges as a champion.</b></p>
+                    <button class="learnMoreBtn" type="button" ng-transclude="">
+                        <span><a href="https://shadowfax.in/services/next-day-delivery"></a>Learn More</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div layout="row" flex="100" flex-xs="95" flex-sm="90" layout-xs="column" layout-align="space-around stretch" layout-align-xs="space-between start" class="oneChoiceSection">
+            <div layout="column" flex="100" flex-xs="100" flex-sm="100" class="oneChoiceSection1">
+                <h1>One choice for many brands</h1>
+                <div class="separator2"></div>
+            </div>
+        </div>
+
+        <!--<div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        -->
+            <!-- Wrapper for slides -->
+            <!--<div class="carousel-inner">
+              <div class="item active">
+                <img src="la.jpg" alt="Los Angeles">
+              </div>
+          
+              <div class="item">
+                <img src="chicago.jpg" alt="Chicago">
+              </div>
+          
+              <div class="item">
+                <img src="ny.jpg" alt="New York">
+              </div>
+            </div>-->
+
+        <div class="oneChoiceWrap" id ="myCarousel" data-ride="carousel" layout-align-sm="start center" data-slick-index="2" style="width: 729px;">
+            <div layout="column" flex="100" flex-xs="100" layout-xs="column" layout-align="center center" layout-align-xs="center center" class="oneChoiceWrapper">
+                <div class="slider">
+                    <div layout="column" flex="100" flex-xs="100" flex-sm="100" class="item-active">
+                        <img src="https://shadowfax.in/assets/images/news/Swiggy.png" style="height: 60px; width: 100%">
+                    </div>
+                    <div layout="column" flex="100" flex-xs="100" flex-sm="100" class="oneChoiceContent">
+                        <p>Shadowfax has been able to partner with us in an effective way without compromising the 
+                        standards of Swiggy customer experience. Their tech and ops excellence has really enabled
+                        us to scale in big cities without a sweat.
+                        </p>
+                        <p><span>- Radheshyam</span>, Swiggy</p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div layout="column" flex="100" flex-xs="100" flex-sm="100" class="oneChoiceImgBewakoof">
+                        <img src="https://shadowfax.in/assets/images/news/bewakoof-logo-og.png" style="height: 60px; width: 100%;">
+                    </div>
+                    <div layout="column" flex="100" flex-xs="100" flex-sm="100" class="oneChoiceContent">
+                        <p>I would like you to know how pleased we are with Shadowfax's effective service. Hope to
+                        have a sustainable working relationship with Shadowfax for long!
+                        </p>
+                        <p><span>- Akhil Srivatsan</span>, Bewakoof</p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div layout="column" flex="100" flex-xs="100" flex-sm="100" class="oneChoiceImgCureFit">
+                        <img src="https://shadowfax.in/assets/images/news/curefit_logo.png" style="height: 60px; width: 100%;">
+                    </div>
+                    <div layout="column" flex="100" flex-xs="100" flex-sm="100" class="oneChoiceContent">
+                        <p>The service provided by Shadowfax’s dedicated workforce has made
+                        our job easy and has helped us to reach out to our customers. Their 
+                        on-time delivery has helped in keeping our customers happy.</p>
+                        <p><span>- Dilip Verma</span>, Curefit</p>
+                    </div>
+                </div>
+                <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+            </div>
+            <!--<div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>-->
+        </div>
+
+        <div layout="row" flex="100" layout-align="center" class="hundreds">
+            <p>Hundreds of esteemed clients from the food, pharma, grocery and other businesses trust Shadowfax for 
+                delivery services in India.</p>
+        </div>
+
+        <div layout="row" flex="85" layout-align="center" class="clientImg">
+            <img src="https://shadowfax.in/assets/images/now_page/Logo_home_page.svg">
+        </div>
+
+        <div layout="row" flex="100" flex-gt-lg="20" flex-md="50" flex-xs="95" flex-sm="80" layout-xs="column" layout-align="center center" layout-align-xs="center" class="andMore">
+            <p style="color: #4A4A4A; font-size: 16px;text-align: center;margin:0;font-weight: 400">and more…</p>
+        </div>
+
+        <div class="container">
+            <div class="randomIcons" layout="row" flex="100" flex-gt-lg="20" flex-md="50" flex-xs="95" flex-sm="80" layout-xs="column" layout-align="center center" layout-align-xs="center">
+                <div class="compCountWrap">
+                    <img src="https://shadowfax.in/assets/images/about-us/abt_new_mile_ico_1.png">
+                    <span>500+</span>
+                    <p><b>Cities<br> Covered</b></p>
+                </div>
+                <div class="compCountWrap">
+                    <img src="https://shadowfax.in/assets/images/about-us/merchent.png">
+                    <span>2,000+</span>
+                    <p><b>Happy<br> Merchants</b></p>
+                </div>
+                <div class="compCountWrap">
+                    <img src="https://shadowfax.in/assets/images/about-us/abt_new_mile_ico_3.png">
+                    <span>100k+</span>
+                    <p><b>Partner<br> Network</b></p>
+                </div>
+                <div class="compCountWrap">
+                    <img src="https://shadowfax.in/assets/images/about-us/abt_new_mile_ico_4.png">
+                    <span>1Cr+</span>
+                    <p><b>Monthly<br> Transactions</b></p>
+                </div>
+                <div class="compCountWrap">
+                    <img src="https://shadowfax.in/assets/images/about-us/merchant_new.png">
+                    <span>10k+</span>
+                    <p><b>Kirana<br> Network</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="awardsContainer">
+            <div class="awards">
+                <h1>Awards</h1>
+                <div class="separator2"></div>
+                <div class="achievements">
+                    <img src="https://shadowfax.in/assets/images/now_page/awards_1.png">
+                </div>
+                <div class="achievements">
+                    <img src="https://shadowfax.in/assets/images/now_page/awards_2.png">
+                </div>
+                <div class="achievements">
+                    <img src="https://shadowfax.in/assets/images/now_page/awards_3.png">
+                </div>
+                <div class="achievements">
+                    <img src="https://shadowfax.in/assets/images/now_page/awards_4.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="whatsNewContainer" style="max-width: 100%;">
+            <div class="whatsNew">
+                <h1>What's new at Shadowfax</h1>
+                <div class="separator2"></div>
+            </div>
+            <div layout="column" class="whatsNewImg1">
+                <img src="https://shadowfax.in/assets/images/now_page/news1.jpg">
+                <h4>NEWS & BLOG</h4>
+                <div class="separator4"></div>
+                <h2>Newsroom for the discussion of lean logistics and supply chain best practices and technologies.</h2>
+                <a class="news" href="https://shadowfax.in/news">
+                    <span class="newContent">Read More</span>
+                </a>
+            </div>
+            <div layout="column" class="whatsNewImg2">
+                <img src="https://shadowfax.in/assets/images/now_page/news2.jpg">
+                <h4>INNOVATION</h4>
+                <div class="separator4"></div>
+                <h2>Read about the emerging technologies shaping the future of logistics.</h2>
+                <a class="news" href="https://shadowfax.in/sfx-labs">
+                    <span class="newContent">Learn More</span>
+                </a>
+            </div>
+        </div>
+<br/>
+<br/><br/><br/><br/><br/><br/><br/>
+        <div class="footerContainer">
+            <div class="footer" layout="column" layout-align="start">
+                <div layout="row" layout-align="space-between-center" class="connect">
+                    <div class="footerLogo">
+                        <img src="https://shadowfax.in/assets/images/logo/footer_logo.png">
+                    </div>
+                    <div class="footerSocial">
+                        <span>Connect with us</span>
+                        <a href="https://www.linkedin.com/company/9480715/" target="_blank">
+                            <img src="https://shadowfax.in/assets/images/social/linkedin-ico.png" alt="linkedin icon">
+                        </a>
+                        <a href="https://www.twitter.com/shadowfax_in" target="_blank">
+                            <img src="https://shadowfax.in/assets/images/social/twitter-ico.png" alt="twitter icon">
+                        </a>
+                        <a href="https://www.facebook.com/shadowfax.in" target="_blank">
+                            <img src="https://shadowfax.in/assets/images/social/facebook-ico.png" alt="facebook icon">
+                        </a>
+                        <a href="https://www.instagram.com/shadowfax.in" target="_blank">
+                            <img src="https://shadowfax.in/assets/images/social/instagram-ico.png" alt="instagram icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footerLinksContainer">
+                    <div class="footer_links1">
+                        <a href="https://shadowfax.in" ui-sref="home"><b>Home</b></a> 
+                        <a href="https://shadowfax.in/about-us" ui-sref="about-us"><b>About Us</b></a>
+                        <a href="https://shadowfax.in/news" ui-sref="news"><b>Newsroom</b></a> 
+                        <a href="https://shadowfax.in/careers" ui-sref="careers"><b>Careers</b></a> 
+                        <a href="https://shadowfax.in/contact-us" ui-sref="contact-us"><b>Contact Us</b></a>
+                    </div>
+                    <div class="footer_links2">
+                        <h6><b>Services</b></h6>
+                        <a href="https://shadowfax.in/services/hyperlocal-delivery" ui-sref="services.now"><b>Hyperlocal Delivery</b></a>
+                        <a href="https://shadowfax.in/services/same-day-delivery" ui-sref="services.same-day-delivery"><b>Same Day Delivery</b></a>
+                        <a href="https://shadowfax.in/services/next-day-delivery" ui-sref="services.next-day-delivery"><b>Next Day Delivery</b></a>
+                    </div>
+                    <div class="footer_links3">
+                        <h6><b>Categories</b></h6>
+                        <a href="https://shadowfax.in/services/hyperlocal-food-delivery" ui-sref="services.hyp_food"><b>Food Delivery</b></a>
+                        <a href="https://shadowfax.in/services/hyperlocal-pharma-delivery" ui-sref="services.hyp_pharma"><b>Medicine Delivery</b></a>
+                        <a href="javascript:void(0)"><b>Grocery Delivery</b></a>
+                        <a href="https://shadowfax.in/services/next-day-forward-logistics" ui-sref="services.nextDay_forwardlogi"><b>E-commerce deliveries</b></a>
+                        <a href="https://shadowfax.in/services/same-day-reverse-logistics" ui-sref="services.sameDay_reverselogi"><b>E-commerce return logistics</b></a>
+                    </div>
+                    <div class="footer_links4">
+                        <h6><b>Partner with us</b></h6>
+                        <a href="https://shadowfax.in/delivery-partners-job" ui-sref="rider-lead"><b>Join as Delivery Partner</b></a>
+                        <a href="https://shadowfax.in/merchant-signup" ui-sref="merchant-signup"><b>Join as Merchant</b></a>
+                    </div>
+                </div>
+
+                <div class="footerCopyright">
+                    <a href="javascript:void(0)">Copyright 2019 © Shadowfax    |</a>
+                    <a href="https://shadowfax.in/privacy.html" target="_blank"> Privacy Policy    |</a>
+                    <a href="https://shadowfax.in/terms.html" target="_blank"> Terms of Use</a>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </body>
+</html>
